@@ -11,7 +11,7 @@ const cors = require('cors');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/ims')
+mongoose.connect('mongodb+srv://sujalprajapat49:lifeking@cluster0.7g6o8zc.mongodb.net/IMS')
   .then(() => console.log('Connected!'));
 /**
  * Get port from environment and store in Express.
@@ -20,11 +20,9 @@ mongoose.connect('mongodb://localhost:27017/ims')
 var port = normalizePort(process.env.PORT || '5000');
 app.set('port', port);
 app.use(cors);  
-
 /**
  * Create HTTP server.
  */
-
 var server = http.createServer(app);
 
 /**
