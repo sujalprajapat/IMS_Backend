@@ -18,7 +18,7 @@ var app = express();
 
 app.use(cors(
   {
-    origin:["https://ims-frontend-rho.vercel.app","http://localhost:3000"],
+    origin:"http://localhost:3000",
     methods:["POST","GET"],
     credentials : true,
   }
